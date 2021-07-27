@@ -129,6 +129,11 @@ export default {
     this.getUserData();
     this.getPostsData();
   },
+  watch:{
+    '$route'(to, from) {
+      this.getUserData()
+    }
+  }
 };
 </script>
 
